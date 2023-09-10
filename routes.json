@@ -1,5 +1,5 @@
 {
-    "/movies": "/movie",
+    "/movies": "/movie?_embed=performers",
     "/movies/:id": "/movie/:id?_embed=performers",
     "/performers": "/performers",
     "/performers/:id": "/performers/:id"
