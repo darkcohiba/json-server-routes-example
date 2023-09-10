@@ -1,0 +1,20 @@
+{
+  "name": "db-json-routes-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "json-server db.json --routes routes.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darkcohiba/json-server-routes-example.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/darkcohiba/json-server-routes-example/issues"
+  },
+  "homepage": "https://github.com/darkcohiba/json-server-routes-example#readme"
+}

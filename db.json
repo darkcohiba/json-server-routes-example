@@ -1,11 +1,196 @@
 {
     "movie": [
-        
+        {
+            "id": 1,
+            "title": "Inception",
+            "year": 2010,
+            "summary": "A thief who enters the dreams of others to obtain hidden information is given the inverse task of planting an idea into the mind of a CEO.",
+            "genre": ["Sci-Fi", "Thriller"]
+        },
+        {
+            "id": 2,
+            "title": "The Matrix",
+            "year": 1999,
+            "summary": "A computer hacker learns about the true nature of his reality and his role in the fight against its controllers.",
+            "genre": ["Action", "Sci-Fi"]
+        },
+        {
+            "id": 3,
+            "title": "The Shawshank Redemption",
+            "year": 1994,
+            "summary": "Wrongly convicted, Andy Dufresne discovers life in Shawshank prison, where he forms a deep bond with fellow inmate Red.",
+            "genre": ["Drama", "Crime"]
+        },
+        {
+            "id": 4,
+            "title": "The Dark Knight",
+            "year": 2008,
+            "summary": "Batman, with the help of allies, tries to thwart the chaotic plans of the Joker in Gotham City.",
+            "genre": ["Action", "Crime", "Drama"]
+        },
+        {
+            "id": 5,
+            "title": "Forrest Gump",
+            "year": 1994,
+            "summary": "Forrest Gump, a man with low intelligence, leads an extraordinary life, with a ringside seat to many historical events, unaware of his impact on the world.",
+            "genre": ["Drama", "Romance"]
+        },
+        {
+            "id": 6,
+            "title": "Fight Club",
+            "year": 1999,
+            "summary": "A discontented man forms an underground fight club, leading to unexpected consequences.",
+            "genre": ["Drama"]
+        },
+        {
+            "id": 7,
+            "title": "Interstellar",
+            "year": 2014,
+            "summary": "A group of astronauts travel through a wormhole near Saturn in search of a new home for humanity.",
+            "genre": ["Sci-Fi", "Adventure", "Drama"]
+        },
+        {
+            "id": 8,
+            "title": "Pulp Fiction",
+            "year": 1994,
+            "summary": "Interweaving stories of crime and intrigue, this film unravels over a few days in the underbelly of Los Angeles.",
+            "genre": ["Crime", "Drama"]
+        },
+        {
+            "id": 9,
+            "title": "Jurassic Park",
+            "year": 1993,
+            "summary": "A theme park with cloned dinosaurs becomes a nightmare for its visitors when the creatures escape.",
+            "genre": ["Sci-Fi", "Adventure", "Thriller"]
+        },
+        {
+            "id": 10,
+            "title": "The Godfather",
+            "year": 1972,
+            "summary": "The aging patriarch of an organized crime dynasty transfers control of his empire to his reluctant son.",
+            "genre": ["Crime", "Drama"]
+        }
     ],
-    "actor":[
-
-    ],
-    "actress":[
-
+    "performers": [
+        {
+            "id": 1,
+            "name": "Leonardo DiCaprio",
+            "movieId": 1,
+            "age": 46
+        },
+        {
+            "id": 2,
+            "name": "Ellen Page",
+            "movieId": 1,
+            "age": 34
+        },
+        {
+            "id": 3,
+            "name": "Keanu Reeves",
+            "movieId": 2,
+            "age": 57
+        },
+        {
+            "id": 4,
+            "name": "Carrie-Anne Moss",
+            "movieId": 2,
+            "age": 54
+        },
+        {
+            "id": 5,
+            "name": "Morgan Freeman",
+            "movieId": 3,
+            "age": 84
+        },
+        {
+            "id": 6,
+            "name": "Tim Robbins",
+            "movieId": 3,
+            "age": 62
+        },
+        {
+            "id": 7,
+            "name": "Christian Bale",
+            "movieId": 4,
+            "age": 47
+        },
+        {
+            "id": 8,
+            "name": "Heath Ledger",
+            "movieId": 4,
+            "age": 28
+        },
+        {
+            "id": 9,
+            "name": "Tom Hanks",
+            "movieId": 5,
+            "age": 65
+        },
+        {
+            "id": 10,
+            "name": "Robin Wright",
+            "movieId": 5,
+            "age": 55
+        },
+        {
+            "id": 11,
+            "name": "Brad Pitt",
+            "movieId": 6,
+            "age": 57
+        },
+        {
+            "id": 12,
+            "name": "Edward Norton",
+            "movieId": 6,
+            "age": 52
+        },
+        {
+            "id": 13,
+            "name": "Matthew McConaughey",
+            "movieId": 7,
+            "age": 51
+        },
+        {
+            "id": 14,
+            "name": "Anne Hathaway",
+            "movieId": 7,
+            "age": 38
+        },
+        {
+            "id": 15,
+            "name": "John Travolta",
+            "movieId": 8,
+            "age": 67
+        },
+        {
+            "id": 16,
+            "name": "Samuel L. Jackson",
+            "movieId": 8,
+            "age": 72
+        },
+        {
+            "id": 17,
+            "name": "Jeff Goldblum",
+            "movieId": 9,
+            "age": 68
+        },
+        {
+            "id": 18,
+            "name": "Laura Dern",
+            "movieId": 9,
+            "age": 54
+        },
+        {
+            "id": 19,
+            "name": "Marlon Brando",
+            "movieId": 10,
+            "age": 47
+        },
+        {
+            "id": 20,
+            "name": "Al Pacino",
+            "movieId": 10,
+            "age": 81
+        }
     ]
 }

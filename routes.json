@@ -1,0 +1,6 @@
+{
+    "/movies": "/movie",
+    "/movies/:id": "/movie/:id?_embed=performers",
+    "/performers": "/performers",
+    "/performers/:id": "/performers/:id"
+}
