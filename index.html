@@ -5,11 +5,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HTML 5 Boilerplate</title>
+    <title>DB JSON Example</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+    <div>
+        <h1>Create a Movie!</h1>
+        <form id="movieForm">
+            <label>Title</label>
+            <input name="title"></input>
+            <label>Year of release!</label>
+            <input name="year"></input>
+            <label>Summary</label>
+            <input name="summary"></input>
+            <label>Genres! Seperate genres with comma, no spaces!</label>
+            <input name="genre"></input>
+            <button>Submit</button>
+        </form>
+    </div>
+    <div>
+        <h1>Create a Performer!</h1>
+        <form id="performerForm">
+            <label>Name</label>
+            <input name="name"></input>
+            <label>age</label>
+            <input type="number" name="age"></input>
+            <label>Select a Movie!</label>
+            <select name="movieId" id="movieList">
+                <option value="0">No Movie</option>
+            </select>
+            <button>Submit</button>
+        </form>
+    </div>
+    
     <script src="index.js"></script>
 </body>
 
