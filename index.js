@@ -1,10 +1,17 @@
 const performerURL = "http://localhost:3000/performers"
 const moviesURL = "http://localhost:3000/movie"
+const moviesWithPerformersURL = "http://localhost:3000/movies"
 
 function fetchMovies() {
     fetch(moviesURL)
         .then(response => response.json())
         .then(data => createMovieOptions(data))
+
+    fetch(moviesWithPerformersURL)
+        .then(response => response.json())
+        .then(allMovies => allMovies.forEach((movie)=>{
+            renderMovies(movie)
+        }))
 }
 
 function createMovieOptions(movies) {
@@ -62,5 +69,28 @@ performerForm.addEventListener("submit", (e) => {
         body: JSON.stringify(performerObj)
     })
 })
+
+function renderMovies(movie) {
+    const displayContainer = document.querySelector("#movieDisplayContainer")
+    const title = document.createElement("h2")
+    const year = document.createElement("h4")
+    const summary = document.createElement("p")
+    const actorTitle = document.createElement("h4")
+    const emptyList = document.createElement("ul")
+    title.textContent = movie.title
+    year.textContent = movie.year
+    summary.textContent = movie.summary
+    actorTitle.textContent = "Performers"
+
+    displayContainer.append(title, year, summary, actorTitle, emptyList)
+
+    movie.performers.forEach((perform)=>{
+        const actorName = document.createElement("li")
+        actorName.textContent = perform.name
+        emptyList.append(actorName)
+
+    })
+}
+
 
 fetchMovies()
