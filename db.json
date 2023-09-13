@@ -5,70 +5,102 @@
             "title": "Inception",
             "year": 2010,
             "summary": "A thief who enters the dreams of others to obtain hidden information is given the inverse task of planting an idea into the mind of a CEO.",
-            "genre": ["Sci-Fi", "Thriller"]
+            "genre": [
+                "Sci-Fi",
+                "Thriller"
+            ]
         },
         {
             "id": 2,
             "title": "The Matrix",
             "year": 1999,
             "summary": "A computer hacker learns about the true nature of his reality and his role in the fight against its controllers.",
-            "genre": ["Action", "Sci-Fi"]
+            "genre": [
+                "Action",
+                "Sci-Fi"
+            ]
         },
         {
             "id": 3,
             "title": "The Shawshank Redemption",
             "year": 1994,
             "summary": "Wrongly convicted, Andy Dufresne discovers life in Shawshank prison, where he forms a deep bond with fellow inmate Red.",
-            "genre": ["Drama", "Crime"]
+            "genre": [
+                "Drama",
+                "Crime"
+            ]
         },
         {
             "id": 4,
             "title": "The Dark Knight",
             "year": 2008,
             "summary": "Batman, with the help of allies, tries to thwart the chaotic plans of the Joker in Gotham City.",
-            "genre": ["Action", "Crime", "Drama"]
+            "genre": [
+                "Action",
+                "Crime",
+                "Drama"
+            ]
         },
         {
             "id": 5,
             "title": "Forrest Gump",
             "year": 1994,
             "summary": "Forrest Gump, a man with low intelligence, leads an extraordinary life, with a ringside seat to many historical events, unaware of his impact on the world.",
-            "genre": ["Drama", "Romance"]
+            "genre": [
+                "Drama",
+                "Romance"
+            ]
         },
         {
             "id": 6,
             "title": "Fight Club",
             "year": 1999,
             "summary": "A discontented man forms an underground fight club, leading to unexpected consequences.",
-            "genre": ["Drama"]
+            "genre": [
+                "Drama"
+            ]
         },
         {
             "id": 7,
             "title": "Interstellar",
             "year": 2014,
             "summary": "A group of astronauts travel through a wormhole near Saturn in search of a new home for humanity.",
-            "genre": ["Sci-Fi", "Adventure", "Drama"]
+            "genre": [
+                "Sci-Fi",
+                "Adventure",
+                "Drama"
+            ]
         },
         {
             "id": 8,
             "title": "Pulp Fiction",
             "year": 1994,
             "summary": "Interweaving stories of crime and intrigue, this film unravels over a few days in the underbelly of Los Angeles.",
-            "genre": ["Crime", "Drama"]
+            "genre": [
+                "Crime",
+                "Drama"
+            ]
         },
         {
             "id": 9,
             "title": "Jurassic Park",
             "year": 1993,
             "summary": "A theme park with cloned dinosaurs becomes a nightmare for its visitors when the creatures escape.",
-            "genre": ["Sci-Fi", "Adventure", "Thriller"]
+            "genre": [
+                "Sci-Fi",
+                "Adventure",
+                "Thriller"
+            ]
         },
         {
             "id": 10,
             "title": "The Godfather",
             "year": 1972,
             "summary": "The aging patriarch of an organized crime dynasty transfers control of his empire to his reluctant son.",
-            "genre": ["Crime", "Drama"]
+            "genre": [
+                "Crime",
+                "Drama"
+            ]
         }
     ],
     "performers": [
