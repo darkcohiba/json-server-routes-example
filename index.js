@@ -3,16 +3,16 @@ const moviesURL = "http://localhost:3000/movie"
 const moviesWithPerformersURL = "http://localhost:3000/movies"
 
 function fetchMovies() {
-    fetch(moviesURL)
-        .then(response => response.json())
-        .then(data => createMovieOptions(data))
-
     fetch(moviesWithPerformersURL)
         .then(response => response.json())
         .then(allMovies => allMovies.forEach((movie)=>{
-            renderMovies(movie)
+            renderMovies(movie, "#movieDisplayContainer", true)
         }))
 }
+
+fetch(moviesURL)
+        .then(response => response.json())
+        .then(data => createMovieOptions(data))
 
 function createMovieOptions(movies) {
     const movieDropDownList = document.querySelector('#movieList')
@@ -70,8 +70,9 @@ performerForm.addEventListener("submit", (e) => {
     })
 })
 
-function renderMovies(movie) {
-    const displayContainer = document.querySelector("#movieDisplayContainer")
+function renderMovies(movie, container, performerFormerOption) {
+    console.log(container)
+    const displayContainer = document.querySelector(container)
     const title = document.createElement("h2")
     const year = document.createElement("h4")
     const summary = document.createElement("p")
@@ -80,10 +81,26 @@ function renderMovies(movie) {
     title.textContent = movie.title
     year.textContent = movie.year
     summary.textContent = movie.summary
-    actorTitle.textContent = "Performers"
 
-    displayContainer.append(title, year, summary, actorTitle, emptyList)
+    if (performerFormerOption){
+        actorTitle.textContent = "Performers"
+        displayContainer.append(title, year, summary, actorTitle)
 
+        renderPerformers(movie, container)
+        return
+    }
+    displayContainer.append(title, year, summary)
+
+    
+
+
+}
+
+function renderPerformers(movie, container){
+    const displayContainer = document.querySelector(container)
+
+    const emptyList = document.createElement("ul")
+    displayContainer.append(emptyList)
     movie.performers.forEach((perform)=>{
         const actorName = document.createElement("li")
         actorName.textContent = perform.name
@@ -92,5 +109,29 @@ function renderMovies(movie) {
     })
 }
 
+document.querySelector("#movieButton").addEventListener("click",()=>{fetchMovies()})
 
-fetchMovies()
+document.querySelector("#searchMoviesByYearForm").addEventListener("submit",(e)=>{
+    e.preventDefault()
+    const startYear = e.target.start.value
+    const endYear = e.target.end.value
+    const sortOption = e.target.sorted.checked
+    console.log(sortOption)
+
+    // console.log(`http://localhost:3000/movie?year_gte=${startYear}&year_lte=${endYear}`)
+    const urlWithSort = `http://localhost:3000/movie?year_gte=${startYear}&year_lte=${endYear}&_sort=year&_order=asc`
+    const url = `http://localhost:3000/movie?year_gte=${startYear}&year_lte=${endYear}`
+
+    sortOption ? 
+    fetch(urlWithSort)
+    .then(response => response.json())
+    .then(allMovies => allMovies.forEach((movie)=>{
+        renderMovies(movie, "#movieDisplayContainer", false)
+    }))
+    :
+    fetch(url)
+    .then(response => response.json())
+    .then(allMovies => allMovies.forEach((movie)=>{
+        renderMovies(movie, "#movieDisplayContainer", false)
+    }))
+})

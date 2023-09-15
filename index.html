@@ -8,6 +8,7 @@
     <title>DB JSON Example</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="dataContainer">
         <h1>Create a Movie!</h1>
@@ -39,10 +40,22 @@
         </form>
         <div id="performerObject"></div>
     </div>
+    <button id="movieButton">View Movies</button>
+
     <div id="movieDisplayContainer">
-        
+
     </div>
-    
+    <form id="searchMoviesByYearForm">
+        <h1>Search movies by a range of release years!</h1>
+        <label>First year of search</label>
+        <input type="number" name="start"></input>
+        <label>Second year of search</label>
+        <input type="number" name="end"></input>
+        <label>Sort the movies by year too?</label>
+        <input type="checkbox" name="sorted"></input>
+        <button>Submit</button>
+    </form>
+
     <script src="index.js"></script>
 </body>
 
