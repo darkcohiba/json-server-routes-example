@@ -71,7 +71,6 @@ performerForm.addEventListener("submit", (e) => {
 })
 
 function renderMovies(movie, container, performerFormerOption) {
-    console.log(container)
     const displayContainer = document.querySelector(container)
     const title = document.createElement("h2")
     const year = document.createElement("h4")
@@ -114,22 +113,33 @@ document.querySelector("#searchMoviesByYearForm").addEventListener("submit",(e)=
     const startYear = e.target.start.value
     const endYear = e.target.end.value
     const sortOption = e.target.sorted.checked
-    console.log(sortOption)
 
-    // console.log(`http://localhost:3000/movie?year_gte=${startYear}&year_lte=${endYear}`)
     const urlWithSort = `http://localhost:3000/movie?year_gte=${startYear}&year_lte=${endYear}&_sort=year&_order=asc`
     const url = `http://localhost:3000/movie?year_gte=${startYear}&year_lte=${endYear}`
-
     sortOption ? 
     fetch(urlWithSort)
     .then(response => response.json())
-    .then(allMovies => allMovies.forEach((movie)=>{
+    .then(allMovies => {
+        if (allMovies.length == 0){
+            console.log("empty")
+            alert("No movies for this time period")
+            return
+        }
+        console.log("you have movies!")
+        allMovies.forEach((movie)=>{
         renderMovies(movie, "#movieDisplayContainer", false)
-    }))
+    })})
     :
     fetch(url)
     .then(response => response.json())
-    .then(allMovies => allMovies.forEach((movie)=>{
+    .then(allMovies => {
+        if (allMovies.length == 0){
+            console.log("empty")
+            alert("No movies for this time period")
+            return
+        }
+        console.log("you have movies!")
+        allMovies.forEach((movie)=>{
         renderMovies(movie, "#movieDisplayContainer", false)
-    }))
+    })})
 })

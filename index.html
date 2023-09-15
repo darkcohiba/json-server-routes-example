@@ -45,16 +45,34 @@
     <div id="movieDisplayContainer">
 
     </div>
-    <form id="searchMoviesByYearForm">
-        <h1>Search movies by a range of release years!</h1>
-        <label>First year of search</label>
-        <input type="number" name="start"></input>
-        <label>Second year of search</label>
-        <input type="number" name="end"></input>
-        <label>Sort the movies by year too?</label>
-        <input type="checkbox" name="sorted"></input>
-        <button>Submit</button>
-    </form>
+    <div class="dataContainer">
+        <form id="searchMoviesByYearForm">
+            <h1>Search movies by a range of release years!</h1>
+            <label>First year of search</label>
+            <select name="start">
+                <option value="1970">1970</option>
+                <option value="1980">1980</option>
+                <option value="1990">1990</option>
+                <option value="2000">2000</option>
+                <option value="2010">2010</option>
+                <option value="2020">2020</option>
+            </select>
+            <!-- <input type="number" name="start"></input> -->
+            <label>Second year of search</label>
+            <select name="end">
+                <option value="1970">1970</option>
+                <option value="1980">1980</option>
+                <option value="1990">1990</option>
+                <option value="2000">2000</option>
+                <option value="2010">2010</option>
+                <option value="2020">2020</option>
+            </select>
+            <!-- <input type="number" name="end"></input> -->
+            <label>Sort the movies by year too?</label>
+            <input type="checkbox" name="sorted"></input>
+            <button>Submit</button>
+        </form>
+    </div>
 
     <script src="index.js"></script>
 </body>

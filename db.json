@@ -101,6 +101,112 @@
                 "Crime",
                 "Drama"
             ]
+        },
+        {
+            "id": 11,
+            "title": "Gladiator",
+            "year": 2000,
+            "summary": "A betrayed Roman general seeks revenge against the corrupt emperor who murdered his family and sent him into slavery.",
+            "genre": [
+                "Action",
+                "Drama",
+                "Adventure"
+            ]
+        },
+        {
+            "id": 12,
+            "title": "Titanic",
+            "year": 1997,
+            "summary": "A seventeen-year-old aristocrat falls in love with a kind but poor artist aboard the luxurious, ill-fated R.M.S. Titanic.",
+            "genre": [
+                "Drama",
+                "Romance"
+            ]
+        },
+        {
+            "id": 13,
+            "title": "Good Will Hunting",
+            "year": 1997,
+            "summary": "A janitor at MIT, has a gift for mathematics but needs help from a psychologist to find direction in his life.",
+            "genre": [
+                "Drama"
+            ]
+        },
+        {
+            "id": 14,
+            "title": "A Beautiful Mind",
+            "year": 2001,
+            "summary": "The life of John Nash, a brilliant but asocial mathematician, from his early life to his Nobel prize win.",
+            "genre": [
+                "Biography",
+                "Drama"
+            ]
+        },
+        {
+            "id": 15,
+            "title": "The Silence of the Lambs",
+            "year": 1991,
+            "summary": "A young FBI cadet seeks the help of an imprisoned and manipulative cannibal killer to catch another serial killer.",
+            "genre": [
+                "Crime",
+                "Drama",
+                "Thriller"
+            ]
+        },
+        {
+            "id": 16,
+            "title": "Schindler's List",
+            "year": 1993,
+            "summary": "The true story of how businessman Oskar Schindler saved over a thousand Jewish lives from the Nazis during World War II.",
+            "genre": [
+                "Biography",
+                "Drama",
+                "History"
+            ]
+        },
+        {
+            "id": 17,
+            "title": "The Departed",
+            "year": 2006,
+            "summary": "An undercover cop and a mole in the police force try to identify each other while infiltrating an Irish gang in Boston.",
+            "genre": [
+                "Crime",
+                "Drama",
+                "Thriller"
+            ]
+        },
+        {
+            "id": 18,
+            "title": "The Prestige",
+            "year": 2006,
+            "summary": "Two stage magicians engage in a battle to create the ultimate illusion, sacrificing everything they have to outwit each other.",
+            "genre": [
+                "Drama",
+                "Mystery",
+                "Sci-Fi"
+            ]
+        },
+        {
+            "id": 19,
+            "title": "Catch Me If You Can",
+            "year": 2002,
+            "summary": "The story of Frank Abagnale Jr., who, before his 19th birthday, successfully performed cons worth millions of dollars.",
+            "genre": [
+                "Biography",
+                "Crime",
+                "Drama"
+            ]
+        },
+        {
+            "id": 20,
+            "title": "The Revenant",
+            "year": 2015,
+            "summary": "A frontiersman on a fur trading expedition in the 1820s fights for survival after being mauled by a bear and left for dead by members of his own hunting team.",
+            "genre": [
+                "Action",
+                "Adventure",
+                "Drama"
+            ]
         }
     ],
     "performers": [
@@ -223,6 +329,126 @@
             "name": "Al Pacino",
             "movieId": 10,
             "age": 81
+        },
+        {
+            "id": 21,
+            "name": "Russell Crowe",
+            "movieId": 11,
+            "age": 57
+        },
+        {
+            "id": 22,
+            "name": "Joaquin Phoenix",
+            "movieId": 11,
+            "age": 46
+        },
+        {
+            "id": 23,
+            "name": "Kate Winslet",
+            "movieId": 12,
+            "age": 45
+        },
+        {
+            "id": 24,
+            "name": "Billy Zane",
+            "movieId": 12,
+            "age": 55
+        },
+        {
+            "id": 25,
+            "name": "Matt Damon",
+            "movieId": 13,
+            "age": 50
+        },
+        {
+            "id": 26,
+            "name": "Robin Williams",
+            "movieId": 13,
+            "age": 63
+        },
+        {
+            "id": 27,
+            "name": "Jennifer Connelly",
+            "movieId": 14,
+            "age": 50
+        },
+        {
+            "id": 28,
+            "name": "Ed Harris",
+            "movieId": 14,
+            "age": 70
+        },
+        {
+            "id": 29,
+            "name": "Jodie Foster",
+            "movieId": 15,
+            "age": 58
+        },
+        {
+            "id": 30,
+            "name": "Anthony Hopkins",
+            "movieId": 15,
+            "age": 83
+        },
+        {
+            "id": 31,
+            "name": "Liam Neeson",
+            "movieId": 16,
+            "age": 69
+        },
+        {
+            "id": 32,
+            "name": "Ben Kingsley",
+            "movieId": 16,
+            "age": 77
+        },
+        {
+            "id": 33,
+            "name": "Mark Wahlberg",
+            "movieId": 17,
+            "age": 50
+        },
+        {
+            "id": 34,
+            "name": "Jack Nicholson",
+            "movieId": 17,
+            "age": 84
+        },
+        {
+            "id": 35,
+            "name": "Michael Caine",
+            "movieId": 18,
+            "age": 88
+        },
+        {
+            "id": 36,
+            "name": "Scarlett Johansson",
+            "movieId": 18,
+            "age": 36
+        },
+        {
+            "id": 37,
+            "name": "Amy Adams",
+            "movieId": 19,
+            "age": 46
+        },
+        {
+            "id": 38,
+            "name": "Martin Sheen",
+            "movieId": 19,
+            "age": 80
+        },
+        {
+            "id": 39,
+            "name": "Domhnall Gleeson",
+            "movieId": 20,
+            "age": 38
+        },
+        {
+            "id": 40,
+            "name": "Will Poulter",
+            "movieId": 20,
+            "age": 28
         }
     ]
 }
