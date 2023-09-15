@@ -77,7 +77,6 @@ function renderMovies(movie, container, performerFormerOption) {
     const year = document.createElement("h4")
     const summary = document.createElement("p")
     const actorTitle = document.createElement("h4")
-    const emptyList = document.createElement("ul")
     title.textContent = movie.title
     year.textContent = movie.year
     summary.textContent = movie.summary
@@ -85,7 +84,6 @@ function renderMovies(movie, container, performerFormerOption) {
     if (performerFormerOption){
         actorTitle.textContent = "Performers"
         displayContainer.append(title, year, summary, actorTitle)
-
         renderPerformers(movie, container)
         return
     }
