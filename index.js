@@ -87,10 +87,6 @@ function renderMovies(movie, container, performerFormerOption) {
         return
     }
     displayContainer.append(title, year, summary)
-
-    
-
-
 }
 
 function renderPerformers(movie, container){
@@ -102,7 +98,6 @@ function renderPerformers(movie, container){
         const actorName = document.createElement("li")
         actorName.textContent = perform.name
         emptyList.append(actorName)
-
     })
 }
 
